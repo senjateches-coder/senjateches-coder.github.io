@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Upload Agent</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65;
+       max-width:760px;margin:0 auto;padding:40px 22px;color:#1f2328;background:#fff}
+  h1{font-size:1.7rem;margin-bottom:.2rem}
+  .sub{color:#57606a;margin-top:0}
+  h2{font-size:1.15rem;margin-top:2rem}
+  code{background:#f6f8fa;padding:2px 6px;border-radius:5px;font-size:.92em}
+  a{color:#0969da}
+  footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid #d0d7de;
+         color:#57606a;font-size:.9rem}
+</style>
+</head>
+<body>
+
+<h1>Video Upload Agent</h1>
+<p class="sub">Alat lokal (MCP) untuk mengunggah video ke YouTube</p>
+
+<p>
+  <strong>Video Upload Agent</strong> adalah alat bantu yang berjalan di komputer penggunanya
+  sendiri (Model Context Protocol server) untuk mengunggah, menjadwalkan, dan mengelola
+  metadata video di kanal YouTube milik pengguna, melalui
+  <a href="https://developers.google.com/youtube/v3">YouTube Data API v3</a> resmi dari Google.
+</p>
+
+<h2>Bagaimana cara kerjanya</h2>
+<ul>
+  <li>Berjalan sepenuhnya <strong>lokal</strong> di komputer pengguna — bukan layanan web, tanpa server pihak ketiga.</li>
+  <li>Autentikasi memakai <strong>OAuth 2.0 milik pengguna sendiri</strong>; token disimpan di perangkat pengguna.</li>
+  <li>Akses hanya diberikan oleh pengguna, dan dapat dicabut kapan saja melalui
+      <a href="https://myaccount.google.com/permissions">Akun Google → Aplikasi &amp; layanan pihak ketiga</a>.</li>
+  <li>Tidak ada data pengguna yang dikirim, dijual, atau dibagikan ke pihak ketiga mana pun.</li>
+</ul>
+
+<h2>Izin yang diminta</h2>
+<ul>
+  <li><code>youtube.upload</code> — mengunggah video</li>
+  <li><code>youtube</code> / <code>youtube.force-ssl</code> — mengelola metadata, thumbnail, dan subtitle video milik pengguna</li>
+  <li><code>youtube.readonly</code> — membaca daftar video di kanal pengguna</li>
+</ul>
+
+<p>
+  Kebijakan privasi lengkap tersedia di
+  <a href="privacy.html">halaman Kebijakan Privasi</a>.
+</p>
+
+<footer>
+  © 2026 Video Upload Agent ·
+  <a href="privacy.html">Kebijakan Privasi</a>
+</footer>
+
+</body>
+</html>
